@@ -31,7 +31,7 @@ struct ContentView: View {
                     .font(Font.custom("Poppins-Regular", size: 20))
                 Divider()
                 InfoView(text: "+91 96731 09542", imageName: "phone.fill")
-                
+                InfoView(text: "parthsnikam12co@gmail.com", imageName: "envelope.fill")
             }
         }
     }
@@ -43,19 +43,4 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-struct InfoView: View {
-    
-    let text: String
-    let imageName: String
-    
-    var body: some View {
-        RoundedRectangle(cornerRadius: 25)
-            .frame(height: 50)
-            .foregroundColor(.white)
-            .overlay(HStack {
-                Image(systemName: imageName)
-                Text(text)
-            })
-            .padding(.all)
-    }
-}
+

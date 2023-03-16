@@ -15,6 +15,7 @@
 		7B5D9CE229C338F000471002 /* Business_Card_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D9CE129C338F000471002 /* Business_Card_SwiftUIUITests.swift */; };
 		7B5D9CE429C338F000471002 /* Business_Card_SwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D9CE329C338F000471002 /* Business_Card_SwiftUIUITestsLaunchTests.swift */; };
 		7B5D9CF229C33C6F00471002 /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B5D9CF129C33C6F00471002 /* Poppins-Regular.ttf */; };
+		7B5D9CF529C3753000471002 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5D9CF429C3753000471002 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		7B5D9CE329C338F000471002 /* Business_Card_SwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business_Card_SwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7B5D9CF129C33C6F00471002 /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
 		7B5D9CF329C33D6300471002 /* Business-Card-SwiftUI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Business-Card-SwiftUI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		7B5D9CF429C3753000471002 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				7B5D9CF029C33C6100471002 /* Fonts */,
 				7B5D9CC629C338EE00471002 /* Business_Card_SwiftUIApp.swift */,
 				7B5D9CC829C338EE00471002 /* ContentView.swift */,
+				7B5D9CF429C3753000471002 /* InfoView.swift */,
 				7B5D9CCA29C338F000471002 /* Assets.xcassets */,
 				7B5D9CCC29C338F000471002 /* Preview Content */,
 			);
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B5D9CC929C338EE00471002 /* ContentView.swift in Sources */,
+				7B5D9CF529C3753000471002 /* InfoView.swift in Sources */,
 				7B5D9CC729C338EE00471002 /* Business_Card_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
