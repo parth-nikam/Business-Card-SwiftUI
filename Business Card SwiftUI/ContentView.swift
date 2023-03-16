@@ -13,10 +13,26 @@ struct ContentView: View {
             Color(.black)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             
-            Text("Parth Nikam")
-                .font(Font.custom("Poppins-Regular", size: 40))
-                .foregroundColor(.white)
-                .bold()
+            VStack {
+                Image("Parth")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 150, height: 150)
+                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .overlay(
+                        Circle().stroke(Color.white, lineWidth: 5)
+                    )
+                Text("Parth Nikam")
+                    .font(Font.custom("Poppins-Regular", size: 40))
+                    .foregroundColor(.white)
+                    .bold()
+                Text("iOS Developer")
+                    .foregroundColor(.white)
+                    .font(Font.custom("Poppins-Regular", size: 20))
+                Divider()
+                InfoView(text: "+91 96731 09542", imageName: "phone.fill")
+                
+            }
         }
     }
 }
@@ -24,5 +40,22 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct InfoView: View {
+    
+    let text: String
+    let imageName: String
+    
+    var body: some View {
+        RoundedRectangle(cornerRadius: 25)
+            .frame(height: 50)
+            .foregroundColor(.white)
+            .overlay(HStack {
+                Image(systemName: imageName)
+                Text(text)
+            })
+            .padding(.all)
     }
 }
