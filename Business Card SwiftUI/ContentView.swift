@@ -30,7 +30,7 @@ struct ContentView: View {
                     .foregroundColor(.white)
                     .font(Font.custom("Poppins-Regular", size: 20))
                 Divider()
-                InfoView(text: "+91 96731 09542", imageName: "phone.fill")
+                InfoView(text: "+91 99999 99999", imageName: "phone.fill")
                 InfoView(text: "parthsnikam12co@gmail.com", imageName: "envelope.fill")
             }
         }
